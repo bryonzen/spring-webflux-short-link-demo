@@ -1,0 +1,11 @@
+server:
+  port: 8081
+
+spring:
+  r2dbc:
+    url: r2dbcs:mysql://127.0.0.1:3307/short_link
+    username: root
+    password: 123456
+
+short-link:
+  base-url: https://i8u.cc

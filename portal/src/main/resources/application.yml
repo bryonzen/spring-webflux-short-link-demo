@@ -1,0 +1,20 @@
+spring:
+  r2dbc:
+    url: r2dbcs:mysql://127.0.0.1:3307/short_link
+    username: root
+    password: 123456
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+      database: 0
+
+short-link:
+  enable-redis-cache: true
+  caffeine-config:
+    expire-after-write: 3600
+    expire-after-access: 43200
+
+logging:
+  level:
+    tech.flycat.shortlink: debug
